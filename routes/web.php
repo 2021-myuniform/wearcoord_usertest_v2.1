@@ -21,6 +21,14 @@ Route::get('/', function () {
     return view('lp.mainContent');
 });
 
+Route::get('/main', function () {
+    return view('layouts.main');
+});
+
+Route::get('/mycoord', function () {
+    return view('lp.mainContent');
+});
+
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

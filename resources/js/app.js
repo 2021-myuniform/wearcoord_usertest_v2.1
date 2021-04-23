@@ -13,3 +13,5 @@ require('./bootstrap');
  */
 
 require('./components/Example');
+require('./components/BottomNav');
+require('./components/parts/NavBtn');
