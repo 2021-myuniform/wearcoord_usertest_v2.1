@@ -15,6 +15,7 @@ import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded';
 import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
 import Header from './parts/Header';
+import MainCoord from './mycoord/MainCoord';
 
 const useStyles = makeStyles({
     root: {
@@ -37,7 +38,7 @@ function Main() {
                 <Switch>
                     <div className="mainTop">
                     <Route path="/main/home" component={Top} />
-                    <Route path="/main/mycoord" component={About} />
+                    <Route path="/main/mycoord" component={MainCoord} />
                     </div>
                 </Switch>
 

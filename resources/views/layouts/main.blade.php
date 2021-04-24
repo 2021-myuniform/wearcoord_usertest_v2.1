@@ -19,10 +19,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined	" rel="stylesheet">
 
+    {{-- font awesome --}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
 
     <!-- Styles -->
+    <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/components/header/header.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/components/myCoord/myCoord.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -30,5 +36,7 @@
     </div>
     <div id="bottomNav">
     </div>
+
+    <script src="{{ asset('js/mySets.js') }}" defer></script>
 </body>
 </html>
