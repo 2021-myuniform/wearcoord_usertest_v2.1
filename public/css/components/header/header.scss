@@ -1,0 +1,28 @@
+.mainTop{
+    padding-top: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    .titleIcon{
+        padding-left: 10px;
+        height: 70%;
+    }
+
+    .titleImg{
+        height: 100%;
+    }
+
+    .settingIcon{
+        padding-right: 10px;
+        cursor: pointer;
+        color: #484848;
+    }
+}

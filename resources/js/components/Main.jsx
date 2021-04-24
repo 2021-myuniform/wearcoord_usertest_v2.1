@@ -14,12 +14,13 @@ import AccessibilityRoundedIcon from '@material-ui/icons/AccessibilityRounded';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded';
 import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
+import Header from './parts/Header';
 
 const useStyles = makeStyles({
     root: {
         width: '100%',
         height: 70,
-        position: 'absolute',
+        position: 'fixed',
         bottom: 0,
     },
 });
@@ -31,10 +32,13 @@ function Main() {
         <Router>
             <div>
                 {/* <BottomNav /> */}
+                <Header />
 
                 <Switch>
+                    <div className="mainTop">
                     <Route path="/main/home" component={Top} />
                     <Route path="/main/mycoord" component={About} />
+                    </div>
                 </Switch>
 
                 <BottomNavigation
@@ -57,7 +61,13 @@ function Main() {
                         to="/main/mycoord"
                         label="MYコーデ"
                         icon={<AccessibilityRoundedIcon />} />
-                    <BottomNavigationAction label="アイテム" icon={<SearchRoundedIcon />} />
+                    <BottomNavigationAction
+                        value='item'
+                        component={Link}
+                        exact to="/"
+                        label="アイテム"
+                        icon={<SearchRoundedIcon
+                        />} />
                     <BottomNavigationAction label="お気に入り" icon={<FavoriteBorderRoundedIcon />} />
                     <BottomNavigationAction label="カート" icon={<ShoppingCartRoundedIcon />} />
                 </BottomNavigation>
