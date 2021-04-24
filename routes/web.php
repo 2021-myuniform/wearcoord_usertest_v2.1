@@ -21,12 +21,20 @@ Route::get('/', function () {
     return view('lp.mainContent');
 });
 
-Route::get('/main', function () {
+// Route::get('/main', function () {
+//     return view('layouts.main');
+// });
+
+// Route::get('/main/{any}', function () {
+//     return view('layouts.main');
+// })->where('any','.*');
+
+Route::get('/main/home', function () {
     return view('layouts.main');
 });
 
-Route::get('/mycoord', function () {
-    return view('lp.mainContent');
+Route::get('/main/mycoord', function () {
+    return view('layouts.main');
 });
 
 Auth::routes();
