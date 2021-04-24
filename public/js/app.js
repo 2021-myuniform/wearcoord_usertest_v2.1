@@ -8460,19 +8460,204 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LeftBtn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LeftBtn */ "./resources/js/components/mycoord/LeftBtn.jsx");
 /* harmony import */ var _RightBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RightBtn */ "./resources/js/components/mycoord/RightBtn.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
 
 
+ // function MainCoord() {
 
 
 
-function MainCoord() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-    className: "selectWearContainer",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_LeftBtn__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_CenterMannequin__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_RightBtn__WEBPACK_IMPORTED_MODULE_3__.default, {})]
-  });
-}
+
+var MainCoord = /*#__PURE__*/function (_React$Component) {
+  _inherits(MainCoord, _React$Component);
+
+  var _super = _createSuper(MainCoord);
+
+  function MainCoord() {
+    _classCallCheck(this, MainCoord);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(MainCoord, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var btnCaps = document.getElementById('btnCaps');
+      var btnTops = document.getElementById('btnTops');
+      var btnPants = document.getElementById('btnPants');
+      var btnSocks = document.getElementById('btnSocks');
+      var btnShoes = document.getElementById('btnShoes');
+      var btnBand = document.getElementById('btnBand');
+      var btnInner = document.getElementById('btnInner');
+      var btnTitleCaps = document.getElementById('btnTitleCaps');
+      var btnTitleTops = document.getElementById('btnTitleTops');
+      var btnTitlePants = document.getElementById('btnTitlePants');
+      var btnTitleSocks = document.getElementById('btnTitleSocks');
+      var btnTitleShoes = document.getElementById('btnTitleShoes');
+      var btnTitleBand = document.getElementById('btnTitleBand');
+      var btnTitleInner = document.getElementById('btnTitleInner');
+
+      function toggleDisplay() {
+        if (btnCaps.open == false && btnTops.open == false && btnPants.open == false && btnSocks.open == false && btnShoes.open == false && btnBand.open == false && btnInner.open == false) {
+          btnTitleCaps.classList.remove('displayNone');
+          btnTitleTops.classList.remove('displayNone');
+          btnTitlePants.classList.remove('displayNone');
+          btnTitleSocks.classList.remove('displayNone');
+          btnTitleShoes.classList.remove('displayNone');
+          btnTitleBand.classList.remove('displayNone');
+          btnTitleInner.classList.remove('displayNone');
+        }
+
+        ;
+
+        if (btnTitleCaps.classList.contains('displayNone')) {
+          btnTitleCaps.classList.remove('displayNone');
+        } else {
+          btnTitleCaps.classList.add('displayNone');
+        }
+
+        if (btnTitleTops.classList.contains('displayNone')) {
+          btnTitleTops.classList.remove('displayNone');
+        } else {
+          btnTitleTops.classList.add('displayNone');
+        }
+
+        if (btnTitlePants.classList.contains('displayNone')) {
+          btnTitlePants.classList.remove('displayNone');
+        } else {
+          btnTitlePants.classList.add('displayNone');
+        }
+
+        if (btnTitleSocks.classList.contains('displayNone')) {
+          btnTitleSocks.classList.remove('displayNone');
+        } else {
+          btnTitleSocks.classList.add('displayNone');
+        }
+
+        if (btnTitleShoes.classList.contains('displayNone')) {
+          btnTitleShoes.classList.remove('displayNone');
+        } else {
+          btnTitleShoes.classList.add('displayNone');
+        }
+
+        if (btnTitleBand.classList.contains('displayNone')) {
+          btnTitleBand.classList.remove('displayNone');
+        } else {
+          btnTitleBand.classList.add('displayNone');
+        }
+
+        if (btnTitleInner.classList.contains('displayNone')) {
+          btnTitleInner.classList.remove('displayNone');
+        } else {
+          btnTitleInner.classList.add('displayNone');
+        }
+      }
+
+      btnCaps.onclick = function () {
+        btnTops.open = false;
+        btnPants.open = false;
+        btnSocks.open = false;
+        btnShoes.open = false;
+        btnBand.open = false;
+        btnInner.open = false;
+        console.log('ok');
+        toggleDisplay();
+      };
+
+      btnTops.onclick = function () {
+        btnCaps.open = false;
+        btnPants.open = false;
+        btnSocks.open = false;
+        btnShoes.open = false;
+        btnBand.open = false;
+        btnInner.open = false;
+        toggleDisplay();
+      };
+
+      btnPants.onclick = function () {
+        btnCaps.open = false;
+        btnTops.open = false;
+        btnSocks.open = false;
+        btnShoes.open = false;
+        btnBand.open = false;
+        btnInner.open = false;
+        toggleDisplay();
+      };
+
+      btnSocks.onclick = function () {
+        btnCaps.open = false;
+        btnTops.open = false;
+        btnPants.open = false;
+        btnShoes.open = false;
+        btnBand.open = false;
+        btnInner.open = false;
+        toggleDisplay();
+      };
+
+      btnShoes.onclick = function () {
+        btnCaps.open = false;
+        btnTops.open = false;
+        btnPants.open = false;
+        btnSocks.open = false;
+        btnBand.open = false;
+        btnInner.open = false;
+        toggleDisplay();
+      };
+
+      btnBand.onclick = function () {
+        btnCaps.open = false;
+        btnTops.open = false;
+        btnPants.open = false;
+        btnSocks.open = false;
+        btnShoes.open = false;
+        btnInner.open = false;
+        toggleDisplay();
+      };
+
+      btnInner.onclick = function () {
+        btnCaps.open = false;
+        btnTops.open = false;
+        btnPants.open = false;
+        btnSocks.open = false;
+        btnShoes.open = false;
+        btnBand.open = false;
+        toggleDisplay();
+      };
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "selectWearContainer",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_LeftBtn__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_CenterMannequin__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_RightBtn__WEBPACK_IMPORTED_MODULE_3__.default, {})]
+      });
+    }
+  }]);
+
+  return MainCoord;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MainCoord);
 

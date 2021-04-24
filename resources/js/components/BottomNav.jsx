@@ -66,7 +66,8 @@ export default function BottomNav() {
                     component={Link}
                     to="/main/mycoord"
                     label="MYコーデ"
-                    icon={<AccessibilityRoundedIcon />} />
+                    icon={<AccessibilityRoundedIcon />}
+                     />
                 <BottomNavigationAction label="アイテム" icon={<SearchRoundedIcon />} />
                 <BottomNavigationAction label="お気に入り" icon={<FavoriteBorderRoundedIcon />} />
                 <BottomNavigationAction label="カート" icon={<ShoppingCartRoundedIcon />} />

@@ -75,6 +75,7 @@ btnCaps.onclick = function () {
     btnShoes.open = false;
     btnBand.open = false;
     btnInner.open = false;
+    console.log('ok');
     toggleDisplay();
 }
 
