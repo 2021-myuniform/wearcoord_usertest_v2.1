@@ -37,6 +37,10 @@ Route::get('/main/mycoord', function () {
     return view('layouts.main');
 });
 
+Route::get('/main/mycoord/select', function () {
+    return view('layouts.main');
+});
+
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
