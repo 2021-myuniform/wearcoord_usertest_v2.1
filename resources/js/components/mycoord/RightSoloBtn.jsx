@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import Button from '@material-ui/core/Button';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+
+
 
 export default class Rightsolobtn extends Component {
     render() {
@@ -31,6 +35,15 @@ export default class Rightsolobtn extends Component {
                             </button>
                         </form>
                     </div>
+
+                    <Button
+        variant="contained"
+        color="secondary"
+        component={Link}
+        to="/main/mycoord/wear"
+      >
+        Delete
+      </Button>
                 </details>
             </div>
         )

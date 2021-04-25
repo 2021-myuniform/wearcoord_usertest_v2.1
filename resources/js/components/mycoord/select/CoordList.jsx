@@ -4,16 +4,17 @@ import Leftbtn from '../LeftBtn'
 import Rightbtn from '../RightBtn'
 import { withRouter } from 'react-router';
 
-class Selectwear extends Component {
+class Coordlist extends Component {
     render() {
         return (
-            <div className="displayFlex w100 justifyCenter">
-                <div className="selectWearContainer">
-                    <CenterMannequin />
-                </div>
+            <div className="displayFlex w100">
+                <Leftbtn />
+                <CenterMannequin />
+                <Rightbtn />
             </div>
         )
     }
 }
 
-export default withRouter(Selectwear)
+export default withRouter(Coordlist)
+

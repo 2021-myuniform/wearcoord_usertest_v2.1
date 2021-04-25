@@ -1,7 +1,10 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import CenterMannequin from './CenterMannequin'
 import Leftbtn from './LeftBtn'
 import Rightbtn from './RightBtn'
+import Coordlist from './select/CoordList';
+import Selectwear from './select/SelectWear';
 
 // function MainCoord() {
 class MainCoord extends React.Component {
@@ -152,11 +155,17 @@ class MainCoord extends React.Component {
 
     render() {
         return (
+            <Router>
             <div className="selectWearContainer">
-                <Leftbtn />
-                <CenterMannequin />
-                <Rightbtn />
+                {/* <Coordlist /> */}
+                {/* <Selectwear /> */}
+
+                <Switch>
+                    <Route path="/main/mycoord/wear" component={Selectwear} />
+                    <Route path="/main/mycoord" component={Coordlist} />
+                </Switch>
             </div>
+            </Router>
         )
     }
 }

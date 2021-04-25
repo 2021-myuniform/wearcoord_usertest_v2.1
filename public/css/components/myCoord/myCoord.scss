@@ -2,6 +2,18 @@
     display: none !important;
 }
 
+.displayFlex{
+    display: flex;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+
+.w100{
+    width: 100%;
+}
+
 .mannequinImg {
     height: 400px;
     background-image: url('../../../img/other/mannequin_done3.png');
