@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import CenterMannequin from '../CenterMannequin'
 import Leftbtn from '../LeftBtn'
 import Rightbtn from '../RightBtn'
 import { withRouter } from 'react-router';
+import Oncentermannequin from './OnCenterMannequin';
 
 class Selectwear extends Component {
     render() {
         return (
             <div className="displayFlex w100 justifyCenter">
                 <div className="selectWearContainer">
-                    <CenterMannequin />
+                    <Oncentermannequin />
                 </div>
             </div>
         )
