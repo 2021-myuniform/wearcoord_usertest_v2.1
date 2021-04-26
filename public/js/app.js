@@ -9396,7 +9396,7 @@ var Rightsolobtn = /*#__PURE__*/function (_Component) {
             variant: "contained",
             color: "secondary",
             component: react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link,
-            to: "/main/mycoord/wear",
+            to: "/main/mycoord/wear/" + this.props.name,
             children: "Delete"
           })]
         })
@@ -9566,6 +9566,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Onmannequin)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _swiper_CapsSwiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./swiper/CapsSwiper */ "./resources/js/components/mycoord/select/swiper/CapsSwiper.jsx");
 /* harmony import */ var _swiper_TopsSwiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./swiper/TopsSwiper */ "./resources/js/components/mycoord/select/swiper/TopsSwiper.jsx");
 /* harmony import */ var _swiper_PantsSwiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./swiper/PantsSwiper */ "./resources/js/components/mycoord/select/swiper/PantsSwiper.jsx");
@@ -9601,23 +9603,67 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var Onmannequin = /*#__PURE__*/function (_Component) {
   _inherits(Onmannequin, _Component);
 
   var _super = _createSuper(Onmannequin);
 
-  function Onmannequin() {
+  function Onmannequin(props) {
+    var _this;
+
     _classCallCheck(this, Onmannequin);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.state = {
+      Caps: "Caps",
+      Tops: "Tops",
+      name3: "Edite"
+    };
+    return _this;
   }
 
   _createClass(Onmannequin, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-        className: "mannequinImg",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_swiper_CapsSwiper__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_swiper_TopsSwiper__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_swiper_PantsSwiper__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_swiper_ShoesSwiper__WEBPACK_IMPORTED_MODULE_4__.default, {})]
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          className: "mannequinImg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Switch, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+              exact: true,
+              path: "/main/mycoord/wear/" + this.state.Caps,
+              component: _swiper_CapsSwiper__WEBPACK_IMPORTED_MODULE_1__.default
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+              exact: true,
+              path: "/main/mycoord/wear/Tops",
+              component: _swiper_TopsSwiper__WEBPACK_IMPORTED_MODULE_2__.default
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+              exact: true,
+              path: "/main/mycoord/wear/Pants",
+              component: _swiper_PantsSwiper__WEBPACK_IMPORTED_MODULE_3__.default
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+              exact: true,
+              path: "/main/mycoord/wear/Shoes",
+              component: _swiper_ShoesSwiper__WEBPACK_IMPORTED_MODULE_4__.default
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("nav", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
+            className: "nav",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+              to: "/main/mycoord/wear/" + this.state.Caps,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+                children: "capsdayo"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+              to: "/main/mycoord/wear/" + this.state.Tops,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+                children: "topsdayo"
+              })
+            })]
+          })
+        })]
       });
     }
   }]);
