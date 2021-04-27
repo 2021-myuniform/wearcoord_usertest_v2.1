@@ -12,8 +12,9 @@ export default class Testswiper extends Component {
 
     }
 
-    componentDidMount() {
-        fetch('/api/foo')
+    getApi = () => {
+        console.log('test');
+        fetch('/api/main/mycoord/wear/Caps')
         .then(response => {
             return response.json();
         })
@@ -22,7 +23,17 @@ export default class Testswiper extends Component {
         });
     }
 
-    renderPitchers() 
+    // componentDidMount() {
+    //     fetch('/api/main/mycoord/wear/Caps')
+    //     .then(response => {
+    //         return response.json();
+    //     })
+    //     .then(objects => {
+    //         this.setState({pitchers:objects});
+    //     });
+    // }
+
+    renderPitchers()
     {
         return this.state.pitchers.map(pitcher => {
             return (
@@ -30,7 +41,7 @@ export default class Testswiper extends Component {
                 名前 : {pitcher.name}<br/>
                 勝利数 : {pitcher.win}<br/>
                 防御率 : {pitcher.era}<br/>
-            </li>      
+            </li>
             );
         });
     }
@@ -41,13 +52,13 @@ export default class Testswiper extends Component {
                 <div className="row">
                     <div className="col-md-8 col-md-offset-2">
                         <div className="panel panel-default">
-                            <div className="panel-heading">Example Component</div>
+                            <button onClick={this.getApi} className="panel-heading">Example Component</button>
 
-                            <div className="panel-body">
+                            <button onClick={this.getApi} className="panel-body">
                                 <ul>
                                 {this.renderPitchers()}
                                 </ul>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>

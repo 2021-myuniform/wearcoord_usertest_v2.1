@@ -40,7 +40,7 @@ export default class Rightsolobtn extends Component {
         variant="contained"
         color="secondary"
         component={Link}
-        to={"/main/mycoord/wear/" + this.props.name}
+        to="/main/mycoord/wear"
       >
         Delete
       </Button>

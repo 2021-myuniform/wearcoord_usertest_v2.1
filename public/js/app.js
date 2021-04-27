@@ -9396,7 +9396,7 @@ var Rightsolobtn = /*#__PURE__*/function (_Component) {
             variant: "contained",
             color: "secondary",
             component: react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link,
-            to: "/main/mycoord/wear/" + this.props.name,
+            to: "/main/mycoord/wear",
             children: "Delete"
           })]
         })
@@ -9566,13 +9566,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Onmannequin)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _swiper_CapsSwiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./swiper/CapsSwiper */ "./resources/js/components/mycoord/select/swiper/CapsSwiper.jsx");
 /* harmony import */ var _swiper_TopsSwiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./swiper/TopsSwiper */ "./resources/js/components/mycoord/select/swiper/TopsSwiper.jsx");
 /* harmony import */ var _swiper_PantsSwiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./swiper/PantsSwiper */ "./resources/js/components/mycoord/select/swiper/PantsSwiper.jsx");
 /* harmony import */ var _swiper_ShoesSwiper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./swiper/ShoesSwiper */ "./resources/js/components/mycoord/select/swiper/ShoesSwiper.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _swiper_TestSwiper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./swiper/TestSwiper */ "./resources/js/components/mycoord/select/swiper/TestSwiper.jsx");
+/* harmony import */ var _swiper_Btn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./swiper/Btn */ "./resources/js/components/mycoord/select/swiper/Btn.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9604,66 +9604,24 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var Onmannequin = /*#__PURE__*/function (_Component) {
   _inherits(Onmannequin, _Component);
 
   var _super = _createSuper(Onmannequin);
 
-  function Onmannequin(props) {
-    var _this;
-
+  function Onmannequin() {
     _classCallCheck(this, Onmannequin);
 
-    _this = _super.call(this, props);
-    _this.state = {
-      Caps: "Caps",
-      Tops: "Tops",
-      name3: "Edite"
-    };
-    return _this;
+    return _super.apply(this, arguments);
   }
 
   _createClass(Onmannequin, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-          className: "mannequinImg",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Switch, {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
-              exact: true,
-              path: "/main/mycoord/wear/" + this.state.Caps,
-              component: _swiper_CapsSwiper__WEBPACK_IMPORTED_MODULE_1__.default
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
-              exact: true,
-              path: "/main/mycoord/wear/Tops",
-              component: _swiper_TopsSwiper__WEBPACK_IMPORTED_MODULE_2__.default
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
-              exact: true,
-              path: "/main/mycoord/wear/Pants",
-              component: _swiper_PantsSwiper__WEBPACK_IMPORTED_MODULE_3__.default
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
-              exact: true,
-              path: "/main/mycoord/wear/Shoes",
-              component: _swiper_ShoesSwiper__WEBPACK_IMPORTED_MODULE_4__.default
-            })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("nav", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
-            className: "nav",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
-              to: "/main/mycoord/wear/" + this.state.Caps,
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
-                children: "capsdayo"
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
-              to: "/main/mycoord/wear/" + this.state.Tops,
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
-                children: "topsdayo"
-              })
-            })]
-          })
-        })]
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        className: "mannequinImg",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_swiper_CapsSwiper__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_swiper_TopsSwiper__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_swiper_PantsSwiper__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_swiper_ShoesSwiper__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_swiper_TestSwiper__WEBPACK_IMPORTED_MODULE_5__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_swiper_Btn__WEBPACK_IMPORTED_MODULE_6__.Btn, {})]
       });
     }
   }]);
@@ -9749,6 +9707,35 @@ var Selectwear = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router__WEBPACK_IMPORTED_MODULE_5__.withRouter)(Selectwear));
+
+/***/ }),
+
+/***/ "./resources/js/components/mycoord/select/swiper/Btn.jsx":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/mycoord/select/swiper/Btn.jsx ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Btn": () => (/* binding */ Btn)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function Btn(props) {
+  {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+        type: "button",
+        onClick: props.onClick,
+        children: "\u30DC\u30BF\u30F3"
+      })
+    });
+  }
+}
 
 /***/ }),
 
@@ -10178,6 +10165,132 @@ var Shoesswiper = /*#__PURE__*/function (_Component) {
   }]);
 
   return Shoesswiper;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/mycoord/select/swiper/TestSwiper.jsx":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/mycoord/select/swiper/TestSwiper.jsx ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Testswiper)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var Testswiper = /*#__PURE__*/function (_Component) {
+  _inherits(Testswiper, _Component);
+
+  var _super = _createSuper(Testswiper);
+
+  function Testswiper() {
+    var _this;
+
+    _classCallCheck(this, Testswiper);
+
+    _this = _super.call(this);
+
+    _defineProperty(_assertThisInitialized(_this), "getApi", function () {
+      console.log('test');
+      fetch('/api/main/mycoord/wear/Caps').then(function (response) {
+        return response.json();
+      }).then(function (objects) {
+        _this.setState({
+          pitchers: objects
+        });
+      });
+    });
+
+    _this.state = {
+      pitchers: []
+    };
+    return _this;
+  }
+
+  _createClass(Testswiper, [{
+    key: "renderPitchers",
+    value: // componentDidMount() {
+    //     fetch('/api/main/mycoord/wear/Caps')
+    //     .then(response => {
+    //         return response.json();
+    //     })
+    //     .then(objects => {
+    //         this.setState({pitchers:objects});
+    //     });
+    // }
+    function renderPitchers() {
+      return this.state.pitchers.map(function (pitcher) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("li", {
+          children: ["\u540D\u524D : ", pitcher.name, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "\u52DD\u5229\u6570 : ", pitcher.win, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "\u9632\u5FA1\u7387 : ", pitcher.era, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {})]
+        }, pitcher.key);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "container",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "row",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "col-md-8 col-md-offset-2",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "panel panel-default",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+                onClick: this.getApi,
+                className: "panel-heading",
+                children: "Example Component"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+                onClick: this.getApi,
+                className: "panel-body",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
+                  children: this.renderPitchers()
+                })
+              })]
+            })
+          })
+        })
+      });
+    }
+  }]);
+
+  return Testswiper;
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 
